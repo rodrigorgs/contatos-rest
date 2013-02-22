@@ -20,8 +20,11 @@ Entre no [Cloud9 IDE](https://c9.io/) usando sua conta do GitHub.
 
 Na barra lateral, embaixo de `Projects on GitHub`, clique no projeto `contatos-rest` e então clique no botão `Clone to Edit`. Depois de um tempo, o projeto deve aparecer sob `My Projects`. Clique nele e então clique no botão `Start Editing`.
 
-terminal: bundle install
-(demora alguns minutos)
+Abra o `Console`, na parte de baixo da tela, e digite
+
+   bundle install
+   
+Isso vai baixar e instalar todas as dependências do projeto. Pode demorar alguns minutos.
 
 # Rodando no Cloud9 IDE
 
@@ -56,6 +59,16 @@ Eis as requisições atendidas por este web service:
 * PUT /contatos/5 - modifica o contato com id = 5
   * Corpo: `{"nome": "Fulano", "telefone": "555-555"}`
 * DELETE /contatos/5 - remove o contato com id = 5
+
+# Entendendo o código-fonte
+
+Se você quiser adaptar o código-fonte para o seu próprio web service, basta editar o arquivo `contatos.rb`. Ele contém a definição do banco de dados e o comportamento do web service para cada requisição HTTP.
+
+Outros arquivos importantes:
+
+* `server.rb`: configurações gerais de banco de dados, servidor web etc. No final, ele referencia o arquivo `contatos.rb`. Você pode editar este arquivo para incluir outros arquivos `.rb`.
+* `Gemfile` e `Gemfile.lock`: descrevem as dependências do projeto. São usados pelo comando `bundle install`. Não precisa mexer.
+* `Procfile`: necessário para o Heroku saber como rodar o seu programa. Não precisa mexer.
 
 # Rodando no Heroku (opcional mas recomendado)
 
