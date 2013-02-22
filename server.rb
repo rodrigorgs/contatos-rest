@@ -11,15 +11,20 @@ require 'json'
 # Config for Cloud9 IDE (http://c9.io/)
 set :port, ENV['PORT'] if ENV['PORT']
 set :bind, ENV['IP'] if ENV['IP']
+database_url = "sqlite://#{Dir.pwd}/database.db"
 
 # Config for Heroku
-database_url = ENV['DATABASE_URL'] || "sqlite://#{Dir.pwd}/database.db"
+if ENV['DATABASE_URL']
+    database_url = ENV['DATABASE_URL']
+else
+    pgkeys = ENV.keys.grep(/HEROKU_POSTGRESQL_.*?_URL/)
+    database_url = ENV[pgkeys[0]] if pgkeys && pgkeys.size > 0
+end
 
 # Database configuration
 DataMapper::setup(:default, database_url)
 
 ###################################################
-
 
 before do
     content_type :json
