@@ -22,7 +22,7 @@ Na barra lateral, embaixo de `Projects on GitHub`, clique no projeto `contatos-r
 
 Abra o `Console`, na parte de baixo da tela, e digite
 
-   bundle install
+    bundle install
    
 Isso vai baixar e instalar todas as dependências do projeto. Pode demorar alguns minutos.
 
@@ -52,13 +52,13 @@ Para outros tipos de requisição (inserir contato, remover contato etc.) você 
 
 Eis as requisições atendidas por este web service:
 
-* GET /contatos - lista todos os contatos
-* GET /contatos/5 - lista o contato com id = 5
-* POST /contatos - insere um contato
+* `GET /contatos` - lista todos os contatos
+* `GET /contatos/5` - lista o contato com id = 5
+* `POST /contatos` - insere um contato
   * Corpo: `{"nome": "Fulano", "telefone": "555-555"}`
-* PUT /contatos/5 - modifica o contato com id = 5
+* `PUT /contatos/5` - modifica o contato com id = 5
   * Corpo: `{"nome": "Fulano", "telefone": "555-555"}`
-* DELETE /contatos/5 - remove o contato com id = 5
+* `DELETE /contatos/5` - remove o contato com id = 5
 
 # Entendendo o código-fonte
 
