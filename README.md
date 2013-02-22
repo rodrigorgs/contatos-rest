@@ -12,7 +12,7 @@ Quer saber como rodar este web service sem instalar nada no computador e sem gas
 
 # Criando sua cópia deste projeto
 
-Acesse o [repositório deste projeto no GitHub](https://github.com/rodrigorgs/contatos-rest) e clique no botão `Fork` (canto superior direito da página). Isso vai criar uma cópia do repositório na sua conta do GitHub. O endereço deve ser algo do tipo <https://github.com/SEU-NOME-DE-USUÁRIO/contatos-rest>.
+Acesse o [repositório deste projeto no GitHub](https://github.com/rodrigorgs/contatos-rest) e clique no botão `Fork` (canto superior direito da página). Isso vai criar uma cópia do repositório na sua conta do GitHub.
 
 # Configurando o projeto do Cloud9 IDE
 
