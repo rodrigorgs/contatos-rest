@@ -46,7 +46,7 @@ Você pode ver a lista de contatos acessando o endereço do web service seguido 
 
 Para outros tipos de requisição (inserir contato, remover contato etc.) você vai precisar de um cliente REST. Eis algumas opções:
 
-* [apigee console](apigee.com/console/others): cliente online, não precisa instalar nada
+* [apigee console](https://apigee.com/console/others): cliente online, não precisa instalar nada
 * [Simple REST Client](https://chrome.google.com/webstore/detail/simple-rest-client/fhjcajmcbmldlhcimfajhfbgofnpcjmb): extensão para o navegador Chrome
 * [RESTClient](https://addons.mozilla.org/en-us/firefox/addon/restclient/): extensão para o navegador Firefox
 
